@@ -18,6 +18,7 @@ jobs:
             - name: 🔨 Build Project
               run: |
                   npm install
+                  npm run install_frontend
                   npm run build
 
             - name: 📂 Sync files
