@@ -7,7 +7,8 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "frontend": "npm start --prefix frontend",
-    "build": "npm run build --prefix frontend"
+    "build": "npm run build --prefix frontend",
+    "install_frontend": "npm install --prefix frontend"
   },
   "repository": {
     "type": "git",
