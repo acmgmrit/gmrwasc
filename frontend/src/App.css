@@ -1,0 +1,77 @@
+/* Navbar */
+.navbar {
+    padding: 2px 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    border-top: 5px solid #007bff;
+}
+
+footer .bi:hover {
+    color: #1B98F5;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* Home */
+/* .home {
+    background: url('../public/img/team/team.png');
+} */
+
+.home-landing-img {
+    width: 100%;
+    height: 93vh;
+    background-image: url("../public/img/team/team.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mask {
+    height: 93vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 2;
+    opacity: 0.4;
+    color: #fff;
+}
+
+.landing-text {
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    color: #fff;
+    z-index: 3;
+    text-align: right;
+}
+
+.landing-text h1 {
+    font-family: "Source Serif 4", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 84px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .landing-text {
+        top: 15%;
+        left: 5%;
+    }
+    .landing-text h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
