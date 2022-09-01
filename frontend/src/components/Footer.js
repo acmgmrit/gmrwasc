@@ -59,7 +59,7 @@ const Footer = () => {
                     <div className="col-auto text-center">
                         ACM Women Student Chapter | GMRIT
                         <br />
-                        Developed with ❤️ by Dhamareshwarakumar
+                        Developed with ❤️ by Team ACMW GMRIT
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div className="container-fluid">
                 <Link className='navbar-brand' to='/'>
                     <img src="/img/logos/acmw.png" alt="ACM W" height="40px" />{" "}

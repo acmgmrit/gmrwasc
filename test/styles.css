@@ -1,0 +1,6 @@
+.landing {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #3D3F65, #202135);
+    /* background: #3D3F65; */
+
+}
