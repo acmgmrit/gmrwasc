@@ -1,5 +1,13 @@
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #CAD5E2;
+}
+
+/* --------------------- Utility Classes --------------------- */
+.text-justify {
+    text-align: justify;
 }
 
 /* Navbar */
@@ -80,7 +88,7 @@ footer a {
 }
 
 
-/* ------------------ Statistics ------------------ */
+/* Statistics */
 
 .home-statistics {
     position: relative;
@@ -133,7 +141,7 @@ footer a {
 }
 
 
-/* ------------------ Section Header ------------------ */
+/* Section Header */
 .section-header {
     text-align: center;
     padding: 30px 0;
@@ -198,11 +206,12 @@ footer a {
 }
 
 
-/* ------------------ Image Card ------------------ */
+/* Image Card */
 .img-card {
     height: 100%;
     border-bottom: 7px solid #007bff;
     box-shadow: 4px 10px 15px -1px rgba(0, 0, 0, 0.31);
+    transition: all ease-in-out 0.2s;
 }
 
 .img-card:hover {
@@ -210,6 +219,12 @@ footer a {
     color: #fff;
 }
 
-.img-card .card-text {
-    text-align: justify;
+
+
+/* ------------------ About Page ------------------ */
+
+/* about acm */
+.acm-vertical {
+    font-size: 65px;
+    transform: rotate(-20deg);
 }
