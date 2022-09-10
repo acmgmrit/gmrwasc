@@ -1,31 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+
+import { animate } from '../../utils/animate';
+
+import ImageCard from './ImageCard';
+
 
 const Home = () => {
-    const animate = e => {
-        let valueDisplays = document.querySelectorAll('.anim-inc-num');
-        valueDisplays.forEach(valueDisplay => {
-            let startValue = parseInt(valueDisplay.getAttribute('datastart')) || 0;
-            let endValue = parseInt(valueDisplay.textContent);
-            let duration = parseInt(valueDisplay.getAttribute('dataduration')) || 3000;
-
-            let interval = Math.floor(duration / (endValue - startValue));
-
-            let counter = setInterval(() => {
-                if (startValue < endValue) {
-                    valueDisplay.textContent = ++startValue;
-                } else {
-                    clearInterval(counter);
-                }
-            }, interval);
-        });
-    }
-
     useEffect(() => {
-        animate();
+        animate('.anim-inc-num');
     }, []);
 
     return (
         <>
+            {/* Landing Section */}
             <div className="home-landing-img">
                 <div className="mask"></div>
                 <div className="landing-text">
@@ -35,6 +22,8 @@ const Home = () => {
                     <h5 className='text-center'>🚧 Under Development 👩🏻‍💻🚧</h5>
                 </div>
             </div>
+
+            {/* Statistics */}
             <div className="home-statistics px-4 px-md-0">
                 <div className="container">
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
@@ -77,6 +66,43 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Services Section */}
+            <div id="services">
+                <div className="container mb-5">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="section-header">
+                                <span>What We Do</span>
+                                <h2>What We Do</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4 mb-3">
+                            <ImageCard
+                                img="/img/home/team_workshop.svg"
+                                title="Workshops"
+                                body="GMRIT-ACM and ACM-W hosts interactive technical workshops and events that helps foster innovation and sharpen skills. We at GMRIT ACM and ACM-W, think of ways to make the world a better place by being the change we want to see."
+                            />
+                        </div>
+                        <div className="col-md-4 mb-3">
+                            <ImageCard
+                                img="/img/home/team_sig.svg"
+                                title="SIG's"
+                                body="Special Interest Groups are constituted for sustainable career which help the students to succeed in attaining career goals.The members of a SIG help their successors in learning contemporary technologies that strengthen competency."
+                            />
+                        </div>
+                        <div className="col-md-4 mb-3">
+                            <ImageCard
+                                img="/img/home/team_code.svg"
+                                title="Codeathons"
+                                body="Code Anytime, an initiative augmented by GMRIT ACM and ACM-W in an effort to develop a coding culture within campus. An environment where everyone is provided with the opportunity to code, learn and grow."
+                            />
                         </div>
                     </div>
                 </div>

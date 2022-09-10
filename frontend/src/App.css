@@ -72,6 +72,7 @@ footer a {
         top: 15%;
         left: 5%;
     }
+
     .landing-text h1 {
         font-size: 35px;
         line-height: 50px;
@@ -79,7 +80,7 @@ footer a {
 }
 
 
-/* Statistics */
+/* ------------------ Statistics ------------------ */
 
 .home-statistics {
     position: relative;
@@ -116,6 +117,7 @@ footer a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .home-statistics-item.three {
     background-image: url('../public/img/home/statistics_bg_3.png');
     background-size: contain;
@@ -128,4 +130,86 @@ footer a {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+/* ------------------ Section Header ------------------ */
+.section-header {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #001973;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-header h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0D42FF;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section-header span {
+    position: absolute;
+    top: 46px;
+    color: rgba(14, 29, 52, 0.06);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
+.section-header p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 640px) {
+    .section-header h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .section-header span {
+        font-size: 38px;
+    }
+}
+
+
+/* ------------------ Image Card ------------------ */
+.img-card {
+    height: 100%;
+    border-bottom: 7px solid #007bff;
+    box-shadow: 4px 10px 15px -1px rgba(0, 0, 0, 0.31);
+}
+
+.img-card:hover {
+    background-color: #1B98F5;
+    color: #fff;
+}
+
+.img-card .card-text {
+    text-align: justify;
 }
