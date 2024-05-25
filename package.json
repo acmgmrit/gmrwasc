@@ -1,0 +1,25 @@
+{
+  "name": "gmrwasc",
+  "version": "1.0.0",
+  "description": "Website for ACM Women Student Chapter GMRIT",
+  "scripts": {
+    "start": "npm start --prefix backend",
+    "backend": "npm start --prefix backend",
+    "frontend": "npm start --prefix frontend",
+    "build": "sh scripts/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acmgmrit/gmrwasc.git"
+  },
+  "keywords": [
+    "ACM",
+    "GMRIT"
+  ],
+  "author": "GMRIT ACM-W Student Chapter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acmgmrit/gmrwasc/issues"
+  },
+  "homepage": "https://github.com/acmgmrit/gmrwasc#readme"
+}
